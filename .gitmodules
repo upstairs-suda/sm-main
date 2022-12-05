@@ -1,0 +1,3 @@
+[submodule "src/sm-sub"]
+	path = src/sm-sub
+	url = https://github.com/upstairs-suda/sm-sub.git
