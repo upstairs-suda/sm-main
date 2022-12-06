@@ -196,6 +196,8 @@ return [
         App\Providers\RouteServiceProvider::class,
 
         App\Providers\ProductRepositoryProvider::class,
+        App\Providers\StoreRepositoryProvider::class,
+        App\Providers\StoreServiceProvider::class,
     ],
 
     /*

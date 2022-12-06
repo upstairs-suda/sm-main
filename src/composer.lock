@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ccbd816a07b206f971042295b899d1ba",
+    "content-hash": "a87cb7dc5acff6eb700d30983dcccca2",
     "packages": [
         {
             "name": "brick/math",
@@ -5161,6 +5161,80 @@
             "time": "2022-09-12T13:28:28+00:00"
         },
         {
+            "name": "upssuda/depsub",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/upstairs-suda/dep-sub.git",
+                "reference": "ab4aaf59676862d469e85b4742891b200dbcb38c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/upstairs-suda/dep-sub/zipball/ab4aaf59676862d469e85b4742891b200dbcb38c",
+                "reference": "ab4aaf59676862d469e85b4742891b200dbcb38c",
+                "shasum": ""
+            },
+            "require": {
+                "guzzlehttp/guzzle": "^7.2",
+                "laravel/framework": "^9.19",
+                "laravel/sanctum": "^3.0",
+                "laravel/tinker": "^2.7",
+                "php": "^8.0.2"
+            },
+            "require-dev": {
+                "fakerphp/faker": "^1.9.1",
+                "laravel/pint": "^1.0",
+                "laravel/sail": "^1.0.1",
+                "mockery/mockery": "^1.4.4",
+                "nunomaduro/collision": "^6.1",
+                "phpunit/phpunit": "^9.5.10",
+                "spatie/laravel-ignition": "^1.0"
+            },
+            "default-branch": true,
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "dont-discover": []
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Depsub\\": "app/",
+                    "Database\\Factories\\": "database/factories/",
+                    "Database\\Seeders\\": "database/seeders/"
+                }
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "Tests\\": "tests/"
+                }
+            },
+            "scripts": {
+                "post-autoload-dump": [
+                    "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
+                    "@php artisan package:discover --ansi"
+                ],
+                "post-update-cmd": [
+                    "@php artisan vendor:publish --tag=laravel-assets --ansi --force"
+                ],
+                "post-root-package-install": [
+                    "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
+                ],
+                "post-create-project-cmd": [
+                    "@php artisan key:generate --ansi"
+                ]
+            },
+            "license": [
+                "MIT"
+            ],
+            "description": "The Laravel Framework.",
+            "support": {
+                "source": "https://github.com/upstairs-suda/dep-sub/tree/main",
+                "issues": "https://github.com/upstairs-suda/dep-sub/issues"
+            },
+            "time": "2022-12-06T02:58:04+00:00"
+        },
+        {
             "name": "vlucas/phpdotenv",
             "version": "v5.5.0",
             "source": {
@@ -7826,7 +7900,9 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": [],
+    "stability-flags": {
+        "upssuda/depsub": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {

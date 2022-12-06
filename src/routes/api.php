@@ -22,3 +22,8 @@ Route::get(
     '/products',
     [\App\Http\Controllers\Api\ProductController::class, 'index']
 );
+
+Route::get(
+    '/stores',
+    [\App\Http\Controllers\Api\StoreController::class, 'index']
+);
