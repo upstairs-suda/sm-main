@@ -32,7 +32,7 @@
             "App\\": "app/",
             "Database\\Factories\\": "database/factories/",
             "Database\\Seeders\\": "database/seeders/",
-            "Submodule\\": "sm-sub/app/"
+            "Submodule\\": "sm-sub/src/app/"
         }
     },
     "autoload-dev": {
