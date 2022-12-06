@@ -199,6 +199,7 @@ return [
         App\Providers\StoreRepositoryProvider::class,
         // App\Providers\StoreServiceProvider::class,
 
+        Submodule\Providers\ProductServiceProvider::class,
         Depsub\Providers\StoreServiceProvider::class,
     ],
 
