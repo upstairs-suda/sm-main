@@ -197,7 +197,9 @@ return [
 
         App\Providers\ProductRepositoryProvider::class,
         App\Providers\StoreRepositoryProvider::class,
-        App\Providers\StoreServiceProvider::class,
+        // App\Providers\StoreServiceProvider::class,
+
+        Depsub\Providers\StoreServiceProvider::class,
     ],
 
     /*

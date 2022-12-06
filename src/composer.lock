@@ -5166,12 +5166,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/upstairs-suda/dep-sub.git",
-                "reference": "ab4aaf59676862d469e85b4742891b200dbcb38c"
+                "reference": "9fc4bf3d6b1fa57433d44832e9afb03846666623"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/upstairs-suda/dep-sub/zipball/ab4aaf59676862d469e85b4742891b200dbcb38c",
-                "reference": "ab4aaf59676862d469e85b4742891b200dbcb38c",
+                "url": "https://api.github.com/repos/upstairs-suda/dep-sub/zipball/9fc4bf3d6b1fa57433d44832e9afb03846666623",
+                "reference": "9fc4bf3d6b1fa57433d44832e9afb03846666623",
                 "shasum": ""
             },
             "require": {
@@ -5232,7 +5232,7 @@
                 "source": "https://github.com/upstairs-suda/dep-sub/tree/main",
                 "issues": "https://github.com/upstairs-suda/dep-sub/issues"
             },
-            "time": "2022-12-06T02:58:04+00:00"
+            "time": "2022-12-06T03:24:19+00:00"
         },
         {
             "name": "vlucas/phpdotenv",
