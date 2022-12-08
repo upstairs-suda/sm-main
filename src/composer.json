@@ -17,7 +17,7 @@
         "laravel/sanctum": "^3.0",
         "laravel/tinker": "^2.7",
         "opis/string": "^2.0",
-        "upssuda/depsub": "dev-main"
+        "upssuda/depsub": "dev-staging"
     },
     "require-dev": {
         "fakerphp/faker": "^1.9.1",
